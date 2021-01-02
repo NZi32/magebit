@@ -1,0 +1,502 @@
+* {
+	box-sizing: border-box;
+}
+html{
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	display: flex;
+	height: 100%;
+	margin: 0;
+	font-family: Arial, serif;
+}
+@media only screen and (min-width: 1201px) {
+	.logo{
+		background-image: url("../images/logo_pineapple-1.svg");
+		background-repeat: no-repeat;
+		min-width: 118px;
+		position: relative;
+		padding-right: 10px;
+	}
+	.column_left {
+		float: left;
+		width: 35%;
+		height: 100%;
+		background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+	}
+
+	/* Create two equal columns that floats next to each other */
+	.column_right {
+		float: left;
+		background: url("../images/image_summer-1.png") no-repeat;
+		background-size: cover;
+		width: 65%;
+		height: 100%;
+		z-index: 1;
+	}
+
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.content {
+		text-align: left;
+		margin: auto;
+		width: 60%;
+	}
+	pr {
+		color: rgba(253, 54, 54,0.7);
+		font-family: Arial, serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		text-justify: auto;
+		width: 80%;
+		display: block;
+	}
+	p3 {
+		font-family: Arial, serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		color: #6a707b;
+		text-decoration: none;
+	}
+
+	p {
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 44px;
+		font-family: Georgia, serif;
+		color: #131821;
+	}
+
+	p2 {
+		font-family: Arial, serif;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 400;
+		color: #6a707b;
+	}
+
+	.email {
+		width: calc(100% + 35px);
+		position: relative;
+		margin-left: -35px;
+		z-index: 2;
+		background-color: #ffffff;
+		border: 1px solid #e3e3e4;
+		box-sizing: border-box;
+		padding-top: 23px;
+		padding-bottom: 23px;
+		text-indent: 40px;
+		font-family: Arial, serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		border-left-style: solid;
+		border-left-width: 4px;
+		border-left-color: #4066a5;
+	}
+
+	.buttonInside{
+		width: 165%;
+		position: relative;
+	}
+
+	input[type="submit"] {
+		background: url("../images/ic_arrow.svg");
+		background-repeat: no-repeat;
+		background-position-y: center;
+		background-position-x: 93%;
+		position:absolute;
+		right: 35px;
+		border:none;
+		height:14px;
+		top: 30px;
+		width:24px;
+		outline:none;
+		text-align:center;
+		font-weight:bold;
+		padding:2px;
+		z-index: 2;
+	}
+
+	.email:focus {
+		box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+	}
+
+	.email:hover ~ .e_button{
+		background-image: url("../images/ic_arrow-1.svg");
+		background-repeat: no-repeat;
+		background-position-y: center;
+		background-position-x: 93%;
+		box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+	}
+
+	.form-group {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.container {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	/* Hide the browser's default checkbox */
+	.container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 26px;
+		width: 26px;
+		border: 1px solid #e3e3e4;
+		box-sizing: border-box;
+		border-radius: 3px;
+		background-color: #ffffff;;
+	}
+
+
+	/* When the checkbox is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+		background-image: url("../images/ic_checkmark-1.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #4066a5;
+		border-style: none;
+
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.container input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	a {
+		font-family: Arial, serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 28px;
+		text-decoration-line: underline;
+		color: #131821;
+	}
+
+	a:hover {
+		color: #4066a5;
+	}
+
+	a:active {
+		color: #233759;
+	}
+
+	.line {
+		border-style: none;
+		border-bottom: 1px solid #e3e3e4;
+	}
+
+	.social {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+		margin: auto;
+		width: 60%;
+	}
+	.mt-5{margin-top: 200px;}
+	.mt-3{margin-top: 80px;}
+	.mt-2{margin-top: 50px;}
+	.mt-1{margin-top: 15px;}
+	.mr-3{padding-right: 80px}
+	.mr-2{margin-right: 20px;}
+	.mr-1{margin-right: 15px;}
+
+	.ml-3{margin-left: 80px;}
+	.ml-1{margin-left: 15px;}
+}
+a.no_dec{
+	text-decoration: none;
+}
+.facebook:hover{
+	fill: #4267B2;
+}
+.facebook:active{
+	fill: #2F4A80;
+}
+
+.instagram:hover{
+	fill: #C13584;
+}
+.instagram:active{
+	fill: #8F2762;
+}
+
+.twitter:hover{
+	fill: #1DA1F2;
+}
+.twitter:active{
+	fill:  #177FBF;
+}
+
+.youtube:hover{
+	fill: #FF0000;
+}
+.youtube:active{
+	fill: #CC0000;
+}
+
+@media only screen and (max-width: 1200px) {
+	.column_left{
+		background-image: url("../images/image_summer-1.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+	.logo{
+		background-image: url("../images/logo_pineapple.svg");
+		background-repeat: no-repeat;
+		width: 25px;
+		min-width: 25px;
+		min-height: 40px;
+		position: relative;
+		margin-left: 20px;
+		margin-top: 10px;
+		margin-bottom: 16px;
+	}
+	.header{
+		justify-content: space-between;
+		display: flex;
+		background: white;
+		width: 100%;
+		align-items: center;
+	}
+	pr {
+		color: rgba(253, 54, 54,0.7);
+		font-family: Arial, serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 14px;
+		line-height: 26px;
+		text-justify: auto;
+		width: 80%;
+		display: block;
+	}
+	p3{
+		font-size: 14px;
+		color: #6A707B;
+	}
+	p{
+		font-weight: 400;
+		color: #131821;
+		font-size: 24px;
+		line-height: 34px;
+		font-family: Georgia, serif !important;
+	}
+	p2{
+		font-family: Arial, serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 26px;
+		color: #6A707B;
+	}
+
+	.content{
+		max-width: 500px;
+		padding-top: 1px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+	}
+
+	input[type="submit"] {
+		background: url("../images/ic_arrow.svg");
+		background-repeat: no-repeat;
+		background-position-y: center;
+		background-position-x: 93%;
+		position:absolute;
+		right: 23px;
+		border:none;
+		height:14px;
+		top: 24px;
+		width:24px;
+		outline:none;
+		text-align:center;
+		font-weight:bold;
+		padding:2px;
+		z-index: 2;
+	}
+
+	.email:focus {
+		box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+	}
+
+	.email:hover ~ .e_button{
+		background-image: url("../images/ic_arrow-1.svg");
+		background-repeat: no-repeat;
+		background-position-y: center;
+		background-position-x: 93%;
+		box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+	}
+
+	.email {
+		position: relative;
+		width: 100%;
+		background-color: #ffffff;
+		border: 1px solid #e3e3e4;
+		box-sizing: border-box;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		text-indent: 15px;
+		font-family: Arial, serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		border-left-style: solid;
+		border-left-width: 4px;
+		border-left-color: #4066a5;
+	}
+	.email:focus {
+		box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+	}
+
+
+	.container {
+
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		padding-top: 20px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	/* Hide the browser's default checkbox */
+	.container input {
+
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+
+		position: absolute;
+		left: 0;
+		height: 26px;
+		width: 26px;
+		border: 1px solid #e3e3e4;
+		box-sizing: border-box;
+		border-radius: 3px;
+		background-color: #ffffff;;
+	}
+
+
+	/* When the checkbox is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+
+		background-image: url("../images/ic_checkmark-1.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #4066a5;
+		border-style: none;
+
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.container input:checked ~ .checkmark:after {
+		display: block;
+	}
+	.line {
+		border-style: none;
+		border-bottom: 1px solid #e3e3e4;
+	}
+	a {
+		font-family: Arial, serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 28px;
+		text-decoration-line: underline;
+		color: #131821;
+	}
+
+	a:hover {
+		color: #4066a5;
+	}
+
+	a:active {
+		color: #233759;
+	}
+	.social {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+		width: 80%;
+		margin: auto;
+		padding: 20px 0 20px 0;
+	}
+	.buttonInside{
+		position: relative;
+	}
+
+	.union{padding-top: 30px}
+	.mr-3{margin-right: 20px;}
+	.mr-1{margin-right: 10px;}
+	.ml-1{margin-left: 10px;}
+	.mt-5{margin-top: 188px;}
+	.mt-2{margin-top: 20px;}
+}
+
+
+
